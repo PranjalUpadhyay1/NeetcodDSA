@@ -4,7 +4,7 @@ class Solution{
   bool checkInclusion(std::string &s1 , std::string s2){
     int tracker[26]={0};
     int l_s1 = s1.length() , l_s2 = s2.length() , temp = 0 ,temp2 = 0 , nonZero = 0 ;
-if(l_s1>l_s2){return false;}
+    if(l_s1>l_s2){return false;}
     for(int i = 0 ; i < l_s1 ; i ++){
       temp = s1[i] -97; temp2 =s2[i]-97; 
       abs(tracker[temp])>abs(++tracker[temp])? nonZero--:nonZero++;
@@ -40,3 +40,4 @@ int main(){
   }
 
 }
+
